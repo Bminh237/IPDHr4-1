@@ -1,10 +1,6 @@
-####
-# Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
+from importlib import reload
+import random
+import os.path
 
 team_name = 'Brandon Minhs Team' # Only 10 chars displayed.
 strategy_name = 'Collude untill betrayal'
@@ -60,7 +56,7 @@ if __name__ == '__main__':
               my_score=0,
               their_score=0,
               result='b'):
-         print 'Test passed'
+         print ('Test passed')
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
               their_history='ccc', 
